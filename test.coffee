@@ -43,8 +43,8 @@ if Meteor.is_client
   
   hit= (cube_id)->
     cube = Cubes.findOne(cube_id)
-    cube_x = cube.row #縦方向に何番目かの情報
-    cube_y = cube.col #横方向に何番目かの情報
+    cube_x = cube.row
+    cube_y = cube.col
     
     while cube_x > 0
       cube_x -= 1
