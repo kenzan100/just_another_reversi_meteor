@@ -1,0 +1,34 @@
+<head>
+  <title>JustAnotherReversi</title>
+</head>
+
+<body>
+  {{> board}}
+  {{> chat}}
+</body>
+
+<template name="board">
+	<h1>Reversi</h1>
+	<ul id="cubes">
+	{{#each cubes}}
+		<li id="{{_id}}" class="{{color}} cube">
+		</li>
+	{{/each}}	
+	<button id="resetBoard">reset the board</button>
+	</ul>
+</template>
+
+<template name="chat">
+	<div id="chat_wrapper">
+		<form id="new_msg">
+			<input type="text" id="new_msg_txt">
+			<input type="submit" value="add">
+		</form>
+		<ul>
+		{{#each messages}}
+			<li>{{txt}}</li>
+		{{/each}}
+		</ul>
+		<button id="clearChat">clear messages</button>
+	</div>
+</template>

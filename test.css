@@ -1,0 +1,30 @@
+/* CSS declarations go here */
+
+#chat_wrapper{
+  width: 100px;
+  float: left;
+}
+
+ul#cubes{
+  width: 540px;
+  height: 500px;
+  float: left;
+}
+li.cube{
+  border: 1px solid lightgray;
+  display: inline-block;
+  line-height: 85px;
+  width: 13%;
+  height: 60px;
+  margin: -7px;
+  cursor: pointer;
+}
+.green{
+  background-color: green;
+}
+.black{
+  background-color: black;
+}
+.white{
+  background-color: white;
+}
