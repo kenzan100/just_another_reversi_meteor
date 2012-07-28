@@ -1,5 +1,9 @@
 /* CSS declarations go here */
 
+a.madewith_badge{
+  box-shadow: 1px 3px 3px black;
+}
+
 #chat_wrapper{
   width: 100px;
   float: left;
