@@ -9,6 +9,7 @@
 
 <template name="board">
 	<h1>Reversi</h1>
+	<h2>now {{which_player}}'s turn</h2>
 	<ul id="cubes">
 	{{#each cubes}}
 		<li id="{{_id}}" class="{{color}} cube">
